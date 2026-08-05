@@ -21,7 +21,8 @@ from claims import ORDER  # noqa: E402
 SUITES = [("closure", "closure_manifest.json"),
           ("arithmetic", "arithmetic_manifest.json"),
           ("routes", "routes_manifest.json"),
-          ("walls", "walls_manifest.json")]
+          ("walls", "walls_manifest.json"),
+          ("grammar", "grammar_manifest.json")]
 
 print("=" * 70)
 print("  ORIGIN — GATE")
