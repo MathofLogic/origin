@@ -1,0 +1,62 @@
+{
+  "chain": [
+    "e514efeddcc8e5c0",
+    "97267f0e611db372"
+  ],
+  "claims": [
+    {
+      "claim": "co-propagation is associative",
+      "cut": "closures 1..24, all positions",
+      "discharged": 90000,
+      "falsifier": "exhibit a closure and three patterns where grouping matters",
+      "held": true,
+      "scope": 90000,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "co-propagation is commutative",
+      "cut": "closures 1..24, all positions",
+      "discharged": 4900,
+      "falsifier": "exhibit two patterns whose composition order changes the result",
+      "held": true,
+      "scope": 4900,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "the loadless pattern is a two-sided identity",
+      "cut": "closures 1..24, all positions",
+      "discharged": 300,
+      "falsifier": "exhibit a pattern that winding-0 fails to leave unchanged",
+      "held": true,
+      "scope": 300,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "every pattern has an inverse propagation",
+      "cut": "closures 1..24, all positions",
+      "discharged": 300,
+      "falsifier": "exhibit a pattern with no undoing partner",
+      "held": true,
+      "scope": 300,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "iteration equals multiplication: repeated co-propagation is not a second operation",
+      "cut": "closures 1..24, k in 0..11",
+      "discharged": 3600,
+      "falsifier": "exhibit (closure, a, k) where repeated composition differs from the product",
+      "held": true,
+      "scope": 3600,
+      "tier": "FORCED-on-cut"
+    }
+  ],
+  "claims_without_falsifier": 0,
+  "nonclaims": [
+    "NOT claimed: that a closure is priced. Establishing an isolation is the floor of this framework and is not derived here.",
+    "NOT claimed: that these results hold past the enumerated closures. Lifting the quantifier requires induction \u2014 a schema, an infinite family \u2014 and that lift is not taken.",
+    "NOT claimed: that co-propagation is the only composition a closure admits. It is the one this suite enumerates."
+  ],
+  "source_sha256_16": "8eb79f6509cd673a",
+  "suite": "CLOSURE \u2014 the primitive",
+  "verdict": "FORCED-on-cut"
+}
