@@ -1,0 +1,64 @@
+{
+  "chain": [
+    "1f5c22ff5b565293",
+    "0106cd5e861c8b51",
+    "ac60cc504cae43a1"
+  ],
+  "claims": [
+    {
+      "claim": "VALUE IS CLOSURE-RELATIVE: the same winding reads differently at different closures, so a bare numeral is a reification",
+      "cut": "winding 5 read at closures (3, 7, 12, 100)",
+      "discharged": 4,
+      "falsifier": "exhibit a winding whose value is identical at every closure",
+      "held": true,
+      "scope": 4,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "CLOSURE STRUCTURE IS INVARIANT: the divisor structure of a closure is a fact about it, not a reading taken inside it \u2014 demonstrated by variation, not assumed",
+      "cut": "closures 12, 13, 16, 17",
+      "discharged": 4,
+      "falsifier": "exhibit a closure whose divisor structure depends on where the reading is taken from",
+      "held": true,
+      "scope": 4,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "PRIMALITY DERIVED: 'no annihilating pair' and 'every pattern reversible' and classical primality coincide on every closure",
+      "cut": "closures 2..59",
+      "discharged": 58,
+      "falsifier": "exhibit a closure where the three criteria disagree",
+      "held": true,
+      "scope": 58,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "LAGRANGE: a pattern's return-time divides the number of reversible patterns in its closure",
+      "cut": "closures 2..39, all units",
+      "discharged": 473,
+      "falsifier": "exhibit a reversible pattern whose return-time does not divide the unit count",
+      "held": true,
+      "scope": 473,
+      "tier": "FORCED-on-cut"
+    },
+    {
+      "claim": "FERMAT: in a prime closure, every non-zero pattern returns home after (p-1) self-propagations \u2014 a corollary of primality-as-non-annihilation plus Lagrange, not a new axiom",
+      "cut": "primes below 60",
+      "discharged": 423,
+      "falsifier": "exhibit a prime closure and a non-zero pattern that does not return after p-1 propagations",
+      "held": true,
+      "scope": 423,
+      "tier": "FORCED-on-cut"
+    }
+  ],
+  "claims_without_falsifier": 0,
+  "nonclaims": [
+    "NOT claimed: that closure is priced. Establishing an isolation is this framework's floor, stated and not crossed.",
+    "NOT claimed: that any result here holds past its enumerated closures. Lifting requires induction over closure size \u2014 a schema \u2014 and the lift is UNPAID.",
+    "NOT claimed: that classical primality is wrong. It is used as a reference to check agreement, never to define. The derivation stands or falls on the coincidence, which is checkable and checked.",
+    "NOT claimed: that the unbounded integers are constructed here. They are the limit of refusing to close; this suite enumerates closures, which are finite by construction."
+  ],
+  "source_sha256_16": "07b23c43791ea6e4",
+  "suite": "NUMBERS \u2014 number theory from closure",
+  "verdict": "FORCED-on-cut"
+}
